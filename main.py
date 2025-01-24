@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep 27 14:36:49 2019
-
-@author: Kaushik
-"""
-#**************** IMPORT PACKAGES ********************
 from flask import Flask, render_template, request, flash, redirect, url_for
 from alpha_vantage.timeseries import TimeSeries
 import pandas as pd
@@ -52,7 +45,6 @@ def index():
 def insertintotable():
     nm = request.form['nm']
 
-    #**************** FUNCTIONS TO FETCH DATA ***************************
     def get_historical(quote):
         end = datetime.now()
         start = datetime(end.year-2,end.month,end.day)
@@ -78,7 +70,6 @@ def insertintotable():
             df.to_csv(''+quote+'.csv',index=False)
         return
 
-    #******************** ARIMA SECTION ********************
     def ARIMA_ALGO(df):
         uniqueVals = df["Code"].unique()  
         len(uniqueVals)
