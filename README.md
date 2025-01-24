@@ -1,7 +1,3 @@
-Here's a sample README file for your project:
-
----
-
 # Stock Price Prediction and Sentiment Analysis
 
 This project is a Flask-based web application that leverages machine learning algorithms, such as ARIMA, LSTM, and Linear Regression, to predict stock prices and analyze the sentiment of tweets related to the stocks. The app allows users to enter a stock symbol and get predicted stock prices, sentiment analysis, and recommendations for trading actions.
@@ -101,11 +97,3 @@ The application will generate the following outputs:
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request with your improvements. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This README provides a clear overview of the project, its features, installation instructions, and usage guidelines. Let me know if you'd like to make any adjustments!
